@@ -1,0 +1,115 @@
+:root{
+    --celeste: #1259c3;;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+main{
+    margin: 0 auto;
+    width: 90%;
+}
+
+i{
+    margin: 0.5vw;
+}
+
+.separar{
+    margin-bottom: 20px;
+}
+
+.navbar{
+    display: none;
+}
+
+.product-data{
+    border-top: 1px solid#ebebeb;
+    display: none;
+}
+
+.article-main{
+    margin:5px;
+    padding: 15px;
+    background-color: white;
+}
+
+.truck-icon{
+    color:#39b54a;
+    border-radius: 100%;
+    border: solid #39b54a 1px;
+    width: 30px;
+    height: 30px;
+}
+
+.burger-menu{
+    color: white;
+    background-color: var(--celeste);
+    font-size: 2em;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    width: 45px;
+}
+
+.icono{
+    color:var(--celeste);
+    font-size: 2em;
+    line-height: 10px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.texto-footer{
+    font-size: 12px;
+}
+
+.titulo{
+    font-size: 24px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+}
+
+@media(min-width:361px){
+    .navbar{
+        display: block;
+    }
+
+    .product-data{
+        display: block;
+    }
+
+    .article-main{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+}
+
