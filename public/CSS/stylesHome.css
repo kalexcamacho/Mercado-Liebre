@@ -1,14 +1,22 @@
 :root{
     --celeste: #1259c3;;
+    --amarillo: #EAC926;;
+    --azul: #03264C;;
+    --grisOscuro: #666666;;
+    --grisClaro: #ebebeb;;
+    --verde: #39b54a;;
 }
 
 body {
     font-family: 'roboto', sans-serif;
-    background-color: #ebebeb;
+    background-color: var(--grisClaro);
+    padding: 0;
+    margin: 0;
+    border:0;
 }
 
 header{
-    background-color: #EAC926;
+    background-color: var(--amarillo);
 }
 
 .logo-y-barraDeBusqueda{
@@ -16,18 +24,21 @@ header{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 50px;
 }
 
 .logo{
     width: 50%;
 }
 
-input{
+.input-busqueda{
     width: 50%;
 }
 
 .barra-de-busqueda{
     width: 50%;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 main{
@@ -57,7 +68,22 @@ i{
 .product-data{
     border-top: 1px solid#ebebeb;
     display: none;
+    transition: all 450ms;
 }
+
+/*.product-data:hover{
+    display: block;
+} */
+
+/* .article-main .product-data{
+    border-top: 1px solid#ebebeb;
+    display: none;
+    transition: all 450ms;
+}
+
+.article-main .product-data:hover{
+    display: block;
+} */
 
 .article-main{
     margin:5px;
@@ -67,9 +93,9 @@ i{
 }
 
 .truck-icon{
-    color:#39b54a;
+    color:var(--verde);
     border-radius: 100%;
-    border: solid #39b54a 1px;
+    border: solid var(--verde) 1px;
     width: 30px;
     height: 30px;
 }
@@ -102,7 +128,7 @@ i{
 
 .descuento{
     font-size: 16px;
-    color: #39b54a;
+    color: var(--verde);
     flex-grow: 0.7;
 }
 
@@ -130,7 +156,7 @@ footer{
 
 @media(min-width:481px){
     .navbar{
-        display: block;
+        display: flex;
     }
 
     .product-data{
@@ -161,10 +187,10 @@ footer{
 
 @media(min-width:769px){
     .navbar{
-        display: block;
+        display: flex;
     }
 
-    .product-data{
+    .product-data:hover{
         display: block;
     }
 
@@ -177,4 +203,5 @@ footer{
         display: none;
     }
 }
+
 
