@@ -16,4 +16,4 @@ app.get('/login', (req, res) => {
     res.sendFile(path.resolve('./views/login.html'))
 });
 
-app.listen(3000, () => console.log('Server running in 3000 port'));
+app.listen(process.env.PORT || 3000, () => console.log('Server running in 3000 port'));
