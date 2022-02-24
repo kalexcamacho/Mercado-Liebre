@@ -50,6 +50,11 @@ form{
     text-align: center;
     border-radius: 5px;
     margin: 0 auto;
+    transition: background-color 450ms;
+}
+
+.button-enviar-borrar:hover{
+    background-color: #0022AA;
 }
 
 body {
@@ -186,7 +191,14 @@ footer{
 
 @media(min-width:481px){
     .navbar{
-        display: block;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul{
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
     }
 
     .product-data{
@@ -217,7 +229,14 @@ footer{
 
 @media(min-width:769px){
     .navbar{
-        display: block;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul{
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
     }
 
     .product-data{

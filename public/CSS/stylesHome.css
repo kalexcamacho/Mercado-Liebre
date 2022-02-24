@@ -71,25 +71,19 @@ i{
     transition: all 450ms;
 }
 
-/*.product-data:hover{
-    display: block;
-} */
-
-/* .article-main .product-data{
-    border-top: 1px solid#ebebeb;
-    display: none;
-    transition: all 450ms;
-}
-
-.article-main .product-data:hover{
-    display: block;
-} */
-
 .article-main{
     margin:5px;
     padding: 15px;
     background-color: white;
+    color: white;
     min-width: 200px;
+    transition: all 450ms;
+}
+
+
+.article-main:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    color: black;
 }
 
 .truck-icon{
@@ -98,6 +92,11 @@ i{
     border: solid var(--verde) 1px;
     width: 30px;
     height: 30px;
+    transition: transform 450ms;
+}
+
+.truck-icon:hover{
+    transform: rotateZ(-90deg);
 }
 
 .burger-menu{
@@ -124,6 +123,7 @@ i{
 .precio{
     font-size: 18px;
     flex-grow: 0.3;
+    color:black;
 }
 
 .descuento{
@@ -157,6 +157,13 @@ footer{
 @media(min-width:481px){
     .navbar{
         display: flex;
+        justify-content: space-around;
+    }
+
+    ul{
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
     }
 
     .product-data{
@@ -165,7 +172,13 @@ footer{
 
     .article-main{
         width: 40%;
+        color:white;
+        transition: all 450ms;
+    }
+
+    .article-main:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        color: black;
     }
 
     .burger-menu{
@@ -183,11 +196,40 @@ footer{
     .barra-de-busqueda{
         width: 30%;
     }
+
+    footer{
+        margin-top: 10px;
+        padding: 10px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer article{
+        width: 20%;
+    }
+
+    footer p{
+        width: 20%;
+    }
+
+    .texto-footer{
+        width: 100%;
+    }
 }
 
 @media(min-width:769px){
     .navbar{
         display: flex;
+        justify-content: space-around;
+    }
+
+    ul{
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
     }
 
     .product-data:hover{
@@ -196,11 +238,40 @@ footer{
 
     .article-main{
         width: 20%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        color:white;
+        transition: all 450ms;
     }
+
+    .article-main:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        color: black;
+    }
+
 
     .burger-menu{
         display: none;
+    }
+
+    footer{
+        margin-top: 10px;
+        padding: 10px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer article{
+        width: 20%;
+    }
+
+    footer p{
+        width: 20%;
+    }
+
+    .texto-footer{
+        width: 100%;
     }
 }
 
